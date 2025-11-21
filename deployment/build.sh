@@ -7,7 +7,7 @@ set -e
 
 # Version configuration
 VERSION="${VERSION:-1.0.3}"
-IMAGE_NAME="debugging-phyton"
+IMAGE_NAME="debugging-python"
 
 echo "🏗️  Building DateTime API Container..."
 echo "📦 Image: ${IMAGE_NAME}:${VERSION}"

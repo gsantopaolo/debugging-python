@@ -1,4 +1,4 @@
-name: debugging-phyton
+name: debugging-python
 channels:
   - conda-forge
   - defaults

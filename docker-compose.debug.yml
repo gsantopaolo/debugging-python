@@ -2,11 +2,11 @@
 # It keeps the container running and waits for the PyCharm debugger to attach
 
 services:
-  debugging-phyton:
+  debugging-python:
     build:
       context: ./src
       dockerfile: Dockerfile
-    container_name: debugging-phyton
+    container_name: debugging-python
     ports:
       - "8000:8000"
       - "5678:5678"  # PyCharm debug server port

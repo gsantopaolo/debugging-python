@@ -1,5 +1,5 @@
 services:
-  debugging-phyton:
+  debugging-python:
     build:
       context: ./src
       dockerfile: Dockerfile
