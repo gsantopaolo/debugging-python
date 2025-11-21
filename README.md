@@ -1,5 +1,8 @@
 #  Deep-Dive: Debugging Python with PyCharm on macOS (Local & Docker) 🐍
 
+> [!IMPORTANT]
+> Check my [blog post on genmind.ch](https://genmind.ch/posts/Deep-Dive-Debugging-Python-with-PyCharm-on-macOS/) to get detail instructions on how to use this repo.
+
 
 A FastAPI-based DateTime API with advanced timezone conversion and business hours functionality. This project serves as a comprehensive example for debugging Python applications with PyCharm on macOS, both locally and in Docker containers.
 
