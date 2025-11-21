@@ -1,0 +1,22 @@
+version: '3.8'
+
+# This is a specialized compose file for PyCharm remote debugging
+# It keeps the container running and waits for the PyCharm debugger to attach
+
+services:
+  datetime-api-debug:
+    build:
+      context: ./src
+      dockerfile: Dockerfile
+    container_name: datetime-api-debug
+    ports:
+      - "8000:8000"
+      - "5678:5678"  # PyCharm debug server port
+    volumes:
+      - ./src:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYCHARM_DEBUG=1
+    # Keep container running without starting the app automatically
+    # PyCharm will start it via the remote interpreter
+    command: ["sleep", "infinity"]
